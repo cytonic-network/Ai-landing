@@ -1,0 +1,654 @@
+---
+const { class: className = "" } = Astro.props;
+---
+
+<section
+  class={"bg-white py-16 px-4 sm:px-6 lg:px-8 font-work -tracking-[0.02em] *:**:transition-all *:**:duration-300" +
+    " " +
+    className}
+>
+  <div class="max-w-7xl mx-auto">
+    <!-- Header -->
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 grid-rows-[auto_auto_1fr] lg:grid-rows-[auto_1fr] mb-12 text-[#343434]"
+    >
+      <span class="text-4xl md:text-5xl lg:text-6xl font-medium">04</span>
+      <h2
+        class="col-start-1 row-start-2 text-4xl md:text-5xl lg:text-6xl font-medium mb-6 text-nowrap"
+      >
+        <span>/ CYTONIC MATRIX</span>
+      </h2>
+      <p
+        class="text-2xl text-[#939393] font-medium col-start-2 lg:row-start-2 row-start-3 ml-auto max-w-[637px]"
+      >
+        Our in-house incubation hub—an ideation taskforce that seeds and
+        accelerates the dApps and AI-powered services our ecosystem needs most.
+        The Matrix prototypes, funds, and launches projects that expand
+        Cytonic's utility while advancing the decentralized, AI-driven web at
+        large
+      </p>
+    </div>
+
+    <!-- Desktop Grid (hidden on mobile/tablet) -->
+    <div
+      class="hidden lg:grid lg:grid-rows-[215px_215px] lg:grid-cols-[363px_363px_363px] gap-4"
+    >
+      <!-- Row 1 -->
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-medium text-black">OBSERVER</h3>
+          <div
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-[#939393]">
+          Multi-Agent Simulation Platform. Agents interact, solve problems, and
+          create documents in real time
+        </p>
+      </div>
+
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-medium text-black">APOLLO</h3>
+          <div
+            class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center group-hover:bg-black"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-[#939393]">
+          Cytonic's Concentrated Liquidity Spot & Perp DEX
+        </p>
+      </div>
+
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-medium text-black">OPTIMATES</h3>
+          <div
+            class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center group-hover:bg-black"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-[#939393]">
+          Cytonic's Liquidity Availability Layer: Stablecoin Liquidity Provider
+          Vault using delta-neutral strategies.
+        </p>
+      </div>
+
+      <!-- Row 2 -->
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-medium text-black">QUANTUMLAYER</h3>
+          <div
+            class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center group-hover:bg-black"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-[#939393]">
+          R&D for Quantum-VM and Quantum-Resistant Blockchain architectures.
+        </p>
+      </div>
+
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-medium text-black">SYNC</h3>
+          <div
+            class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center group-hover:bg-black"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-[#939393]">
+          Cross-Chain Smart Wallet solution to simplify bridging and wallet UX.
+        </p>
+      </div>
+
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
+        <div class="flex items-center justify-between">
+          <h3 class="text-2xl font-medium text-black">INFINITE RUNS</h3>
+          <div
+            class="w-10 h-10 bg-gray-200 rounded-lg flex items-center justify-center group-hover:bg-black"
+          >
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-[#939393]">
+          AI-enabled GameFi builder for viral mini-games. Pilot Game:
+          Cypocalypse
+        </p>
+      </div>
+    </div>
+
+    <!-- Tablet Grid (md screens) -->
+    <div class="hidden md:grid lg:hidden md:grid-cols-2 gap-6">
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-medium text-black">OBSERVER</h3>
+          <div
+            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          Multi-Agent Simulation Platform. Agents interact, solve problems, and
+          create documents in real time
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-medium text-black">APOLLO</h3>
+          <div
+            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          Cytonic's Concentrated Liquidity Spot & Perp DEX
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-medium text-black">OPTIMATES</h3>
+          <div
+            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          Cytonic's Liquidity Availability Layer: Stablecoin Liquidity Provider
+          Vault using delta-neutral strategies.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-medium text-black">INFINITE RUNS</h3>
+          <div
+            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          AI-enabled GameFi builder for viral mini-games. Pilot Game:
+          Cypocalypse
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-medium text-black">QUANTUMLAYER</h3>
+          <div
+            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          R&D for Quantum-VM and Quantum-Resistant Blockchain architectures.
+        </p>
+      </div>
+
+      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="text-2xl font-medium text-black">SYNC</h3>
+          <div
+            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+          >
+            <svg
+              class="w-4 h-4 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M7 17l9.2-9.2M17 17V7H7"></path>
+            </svg>
+          </div>
+        </div>
+        <p class="text-gray-600">
+          Cross-Chain Smart Wallet solution to simplify bridging and wallet UX.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mobile Carousel -->
+    <div class="block md:hidden">
+      <div class="relative overflow-hidden">
+        <div
+          class="flex transition-transform duration-300 ease-in-out"
+          id="carousel-container"
+        >
+          <!-- Card 1 - OBSERVER -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-medium text-black">OBSERVER</h3>
+                <div
+                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 17l9.2-9.2M17 17V7H7"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                Multi-Agent Simulation Platform. Agents interact, solve
+                problems, and create documents in real time
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 - APOLLO -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-medium text-black">APOLLO</h3>
+                <div
+                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 17l9.2-9.2M17 17V7H7"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                Cytonic's Concentrated Liquidity Spot & Perp DEX
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 - OPTIMATES -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-medium text-black">OPTIMATES</h3>
+                <div
+                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 17l9.2-9.2M17 17V7H7"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                Cytonic's Liquidity Availability Layer: Stablecoin Liquidity
+                Provider Vault using delta-neutral strategies.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 - INFINITE RUNS -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-medium text-black">INFINITE RUNS</h3>
+                <div
+                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 17l9.2-9.2M17 17V7H7"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                AI-enabled GameFi builder for viral mini-games. Pilot Game:
+                Cypocalypse
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 - QUANTUMLAYER -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-medium text-black">QUANTUMLAYER</h3>
+                <div
+                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 17l9.2-9.2M17 17V7H7"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                R&D for Quantum-VM and Quantum-Resistant Blockchain
+                architectures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 6 - SYNC -->
+          <div class="w-full flex-shrink-0 px-4">
+            <div
+              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-medium text-black">SYNC</h3>
+                <div
+                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M7 17l9.2-9.2M17 17V7H7"></path>
+                  </svg>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                Cross-Chain Smart Wallet solution to simplify bridging and
+                wallet UX.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel Indicators -->
+      <div class="flex justify-center mt-6 space-x-2">
+        <button
+          class="w-2 h-2 bg-black rounded-full carousel-dot active"
+          data-slide="0"></button>
+        <button
+          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          data-slide="1"></button>
+        <button
+          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          data-slide="2"></button>
+        <button
+          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          data-slide="3"></button>
+        <button
+          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          data-slide="4"></button>
+        <button
+          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          data-slide="5"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Mobile carousel functionality
+  let currentSlide = 0;
+  const totalSlides = 6;
+  const container = document.getElementById("carousel-container");
+  const dots = document.querySelectorAll(".carousel-dot");
+
+  function updateCarousel(slideIndex) {
+    const translateX = -slideIndex * 100;
+    container.style.transform = `translateX(${translateX}%)`;
+
+    // Update dots
+    dots.forEach((dot, index) => {
+      if (index === slideIndex) {
+        dot.classList.add("active");
+        dot.classList.remove("bg-gray-300");
+        dot.classList.add("bg-black");
+      } else {
+        dot.classList.remove("active");
+        dot.classList.remove("bg-black");
+        dot.classList.add("bg-gray-300");
+      }
+    });
+  }
+
+  // Add click handlers to dots
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      currentSlide = index;
+      updateCarousel(currentSlide);
+    });
+  });
+
+  // Auto-advance carousel (optional)
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    updateCarousel(currentSlide);
+  }, 5000);
+
+  // Touch/swipe support
+  let startX = 0;
+  let isDragging = false;
+
+  container.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+  });
+
+  container.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+  });
+
+  container.addEventListener("touchend", (e) => {
+    if (!isDragging) return;
+    isDragging = false;
+
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0 && currentSlide < totalSlides - 1) {
+        currentSlide++;
+      } else if (diff < 0 && currentSlide > 0) {
+        currentSlide--;
+      }
+      updateCarousel(currentSlide);
+    }
+  });
+</script>
+
+<style>
+  .carousel-dot.active {
+    background-color: #000;
+  }
+</style>
