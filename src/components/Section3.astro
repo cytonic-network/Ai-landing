@@ -1,0 +1,86 @@
+---
+import NetworkText1 from "../../public/icons/networkStatus1.svg";
+import NetworkText2 from "../../public/icons/networkStatus2.svg";
+
+import Globe from "../../public/icons/globe.svg";
+import Rocket from "../../public/icons/rocket.svg";
+import TwoChecks from "../../public/icons/twoChecks.svg";
+---
+
+<div
+    class="relative bg-main-gray h-[983px] w-full rounded-[72px] flex justify-center"
+>
+    <div class="-z-0 absolute w-full flex flex-col h-full justify-between">
+        <NetworkText1 />
+        <div class="ml-auto">
+            <NetworkText2 />
+        </div>
+    </div>
+
+    <div
+        class="pt-20 px-10 pb-[82px] flex flex-col items-center gap-[258px] w-full"
+    >
+        <div class="flex items-center flex-col gap-2 text-white font-medium">
+            <p class="text-[24px]">03</p>
+            <span class="text-[18px]">/ Network status</span>
+        </div>
+
+        <div class="flex gap-4">
+            <div
+                class="bg-white rounded-[24px] h-[504px] w-[363px] flex justify-center relative"
+            >
+                <div class="absolute -top-6">
+                    <TwoChecks />
+                </div>
+                <div class="text-center flex flex-col gap-6">
+                    <p class="font-medium text-[24px] mt-30 uppercase">
+                        Layer 1 Testnet
+                    </p>
+                    <span class="leading-[120%] text-[#939393]">
+                        Initial EVM and SVM execution<br /> environments are deployed
+                        on the<br /> Cytonic Layer 1 Testnet
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-[24px] h-[504px] w-[363px] flex justify-center relative bottom-[71px] px-6"
+            >
+                <div class="absolute -top-18">
+                    <Rocket />
+                </div>
+                <div class="text-center flex flex-col gap-6">
+                    <p class="font-medium text-[24px] mt-30 uppercase">
+                        Lightwave<br /> Network Upgrade
+                    </p>
+                    <span class="leading-[120%] text-[#939393]">
+                        The upcoming Lightwave release will upgrade our current
+                        EVM and SVM network extensions to allow for increased
+                        performance and introduce two new network extensions
+                        featuring MoveVM and CosmWASM
+                    </span>
+                </div>
+            </div>
+
+            <div
+                class="bg-white rounded-[24px] h-[504px] w-[363px] flex justify-center relative px-6"
+            >
+                <div class="absolute -top-22">
+                    <Globe />
+                </div>
+                <div class="text-center flex flex-col gap-6">
+                    <p class="font-medium text-[24px] mt-30 uppercase">
+                        Unified User<br /> Experience
+                    </p>
+                    <span class="leading-[120%] text-[#939393]">
+                        Lightwave sets the stage for native cross-VM
+                        communication. EVM, SVM, MoveVM, and CosmWASM will feel
+                        like one VM. Creators gain composability; users have
+                        zero broken flows. Rapid upgrades will keep sanding
+                        friction until Cytonic feels effortless
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
