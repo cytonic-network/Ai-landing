@@ -3,11 +3,11 @@ const { class: className = "" } = Astro.props;
 ---
 
 <section
-  class={"bg-white py-16 px-4 sm:px-6 lg:px-8 font-work -tracking-[0.02em] *:**:transition-all *:**:duration-300" +
+  class={"bg-white py-16 sm:px-6 lg:px-8 font-work -tracking-[0.02em] *:**:transition-all *:**:duration-300" +
     " " +
     className}
 >
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-[1200px] px-[39.5px] mx-auto">
     <!-- Header -->
     <div
       class="grid grid-cols-1 lg:grid-cols-2 grid-rows-[auto_auto_1fr] lg:grid-rows-[auto_1fr] mb-12 text-[#343434]"
@@ -56,7 +56,7 @@ const { class: className = "" } = Astro.props;
             </svg>
           </div>
         </div>
-        <p class="text-[#939393]">
+        <p class="text-[#939393] lg:pr-10">
           Multi-Agent Simulation Platform. Agents interact, solve problems, and
           create documents in real time
         </p>
@@ -84,7 +84,7 @@ const { class: className = "" } = Astro.props;
             </svg>
           </div>
         </div>
-        <p class="text-[#939393]">
+        <p class="text-[#939393] lg:pr-10">
           Cytonic's Concentrated Liquidity Spot & Perp DEX
         </p>
       </div>
@@ -111,7 +111,7 @@ const { class: className = "" } = Astro.props;
             </svg>
           </div>
         </div>
-        <p class="text-[#939393]">
+        <p class="text-[#939393] lg:pr-10">
           Cytonic's Liquidity Availability Layer: Stablecoin Liquidity Provider
           Vault using delta-neutral strategies.
         </p>
@@ -140,7 +140,7 @@ const { class: className = "" } = Astro.props;
             </svg>
           </div>
         </div>
-        <p class="text-[#939393]">
+        <p class="text-[#939393] lg:pr-10">
           R&D for Quantum-VM and Quantum-Resistant Blockchain architectures.
         </p>
       </div>
@@ -167,7 +167,7 @@ const { class: className = "" } = Astro.props;
             </svg>
           </div>
         </div>
-        <p class="text-[#939393]">
+        <p class="text-[#939393] lg:pr-10">
           Cross-Chain Smart Wallet solution to simplify bridging and wallet UX.
         </p>
       </div>
@@ -194,7 +194,7 @@ const { class: className = "" } = Astro.props;
             </svg>
           </div>
         </div>
-        <p class="text-[#939393]">
+        <p class="text-[#939393] lg:pr-10">
           AI-enabled GameFi builder for viral mini-games. Pilot Game:
           Cypocalypse
         </p>
@@ -203,14 +203,16 @@ const { class: className = "" } = Astro.props;
 
     <!-- Tablet Grid (md screens) -->
     <div class="hidden md:grid lg:hidden md:grid-cols-2 gap-6">
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-2xl font-medium text-black">OBSERVER</h3>
           <div
-            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -229,14 +231,16 @@ const { class: className = "" } = Astro.props;
         </p>
       </div>
 
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-2xl font-medium text-black">APOLLO</h3>
           <div
-            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -254,14 +258,16 @@ const { class: className = "" } = Astro.props;
         </p>
       </div>
 
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-2xl font-medium text-black">OPTIMATES</h3>
           <div
-            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -280,14 +286,16 @@ const { class: className = "" } = Astro.props;
         </p>
       </div>
 
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-2xl font-medium text-black">INFINITE RUNS</h3>
           <div
-            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -306,14 +314,16 @@ const { class: className = "" } = Astro.props;
         </p>
       </div>
 
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-2xl font-medium text-black">QUANTUMLAYER</h3>
           <div
-            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -331,14 +341,16 @@ const { class: className = "" } = Astro.props;
         </p>
       </div>
 
-      <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+      <div
+        class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
+      >
         <div class="flex items-center justify-between mb-4">
           <h3 class="text-2xl font-medium text-black">SYNC</h3>
           <div
-            class="w-10 h-10 bg-black rounded flex items-center justify-center"
+            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
           >
             <svg
-              class="w-4 h-4 text-white"
+              class="w-6 h-6 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -365,17 +377,17 @@ const { class: className = "" } = Astro.props;
           id="carousel-container"
         >
           <!-- Card 1 - OBSERVER -->
-          <div class="w-full flex-shrink-0 px-4">
+          <div class="w-full flex-shrink-0">
             <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+              class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
             >
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-2xl font-medium text-black">OBSERVER</h3>
                 <div
-                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                  class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
                 >
                   <svg
-                    class="w-4 h-4 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -396,17 +408,17 @@ const { class: className = "" } = Astro.props;
           </div>
 
           <!-- Card 2 - APOLLO -->
-          <div class="w-full flex-shrink-0 px-4">
+          <div class="w-full flex-shrink-0">
             <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+              class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
             >
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-2xl font-medium text-black">APOLLO</h3>
                 <div
-                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                  class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
                 >
                   <svg
-                    class="w-4 h-4 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -426,17 +438,17 @@ const { class: className = "" } = Astro.props;
           </div>
 
           <!-- Card 3 - OPTIMATES -->
-          <div class="w-full flex-shrink-0 px-4">
+          <div class="w-full flex-shrink-0">
             <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+              class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
             >
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-2xl font-medium text-black">OPTIMATES</h3>
                 <div
-                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                  class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
                 >
                   <svg
-                    class="w-4 h-4 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -457,17 +469,17 @@ const { class: className = "" } = Astro.props;
           </div>
 
           <!-- Card 4 - INFINITE RUNS -->
-          <div class="w-full flex-shrink-0 px-4">
+          <div class="w-full flex-shrink-0">
             <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+              class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
             >
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-2xl font-medium text-black">INFINITE RUNS</h3>
                 <div
-                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                  class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
                 >
                   <svg
-                    class="w-4 h-4 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -488,17 +500,17 @@ const { class: className = "" } = Astro.props;
           </div>
 
           <!-- Card 5 - QUANTUMLAYER -->
-          <div class="w-full flex-shrink-0 px-4">
+          <div class="w-full flex-shrink-0">
             <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+              class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
             >
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-2xl font-medium text-black">QUANTUMLAYER</h3>
                 <div
-                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                  class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
                 >
                   <svg
-                    class="w-4 h-4 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -519,17 +531,17 @@ const { class: className = "" } = Astro.props;
           </div>
 
           <!-- Card 6 - SYNC -->
-          <div class="w-full flex-shrink-0 px-4">
+          <div class="w-full flex-shrink-0">
             <div
-              class="bg-white rounded-lg p-6 shadow-sm border border-gray-200"
+              class="bg-[#F5F5F5] flex flex-col justify-between hover:bg-white border border-[#E8E8E8] group rounded-3xl p-6 w-full"
             >
               <div class="flex items-center justify-between mb-4">
                 <h3 class="text-2xl font-medium text-black">SYNC</h3>
                 <div
-                  class="w-10 h-10 bg-black rounded flex items-center justify-center"
+                  class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center"
                 >
                   <svg
-                    class="w-4 h-4 text-white"
+                    class="w-6 h-6 text-white"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
