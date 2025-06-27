@@ -1,0 +1,127 @@
+---
+// NewsSection.astro
+const newsItems = [
+  {
+    date: "June 23, 2025",
+    title: "CYTONIC ANNOUNCES PRIVATE BETA OF A NEW AI FRAMEWORK WHICH CAN BUILD ENTIRE CRYPTO DAPPS",
+    description: "The initiative called Cytonic AI promises that soon anyone will be able to become a builder",
+    id: 1
+  },
+  {
+    date: "June 21, 2025", 
+    title: "LIGHTWAVE NETWORK UPGRADE",
+    description: "The Lightwave upgrade is a strategic collaboration of Cytonic with multiple parties to upgrade the current Testnet",
+    id: 2
+  },
+  {
+    date: "June 18, 2025",
+    title: "CYTONIC INTRODUCES THE CYTONIC MATRIX", 
+    description: "Cytonic unveils its ecosystem fund and incubator program",
+    id: 3
+  },
+  {
+    date: "May 1, 2025",
+    title: "EARLY WAVE OF INITIATIVES FOR PROJECTS TO DEPLOY ON CYTONIC TESTNET",
+    description: "Cytonic partners with Deri, Relend, Elk Finance, RBX, Seipocalypse, Vaultedge and multiple other projects.",
+    id: 4
+  }
+];
+---
+
+<section class="bg-[#212121] rounded-[72px] py-16 px-10 max-w-[1200px] mx-auto relative backdrop-blur-3xl font-work -tracking-[0.54px] overflow-clip">
+    <span class="absolute text-[284px] -tracking-[8.52px] font-aurore text-[#AFAFAF] blur-[18px] -top-30 right-0 -rotate-[15.308deg]">Cytonic</span>
+    <span class="absolute text-[284px] -tracking-[8.52px] font-aurore text-[#AFAFAF] blur-[18px] -bottom-30 left-0 rotate-[15.839deg]">news</span>
+  <div class="mx-auto">
+    <!-- Section Header -->
+    <div class="mb-13 text-[46px] font-medium text-white -tracking-[0.92px] leading-[120%]">
+        06 <br /> / LATEST NEWS
+    </div>
+
+    <!-- News Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+      {newsItems.map((item) => (
+        <article class="group relative min-h-[262px]">
+          <div class="bg-[#FAFAFA] flex flex-col justify-between rounded-3xl p-6 pt-7 h-full transition-all duration-300">
+            <!-- Date -->
+            <time class="text-lg text-[#939393] font-medium mb-4 block">
+              {item.date}
+            </time>
+            
+            <!-- Title -->
+            <h3 class="text-lg font-medium text-black mb-4 lg:mr-36">
+              {item.title}
+            </h3>
+            
+            <!-- Description -->
+            <p class="text-lg font-medium text-[#939393] mt-auto">
+              {item.description}
+            </p>
+            
+            <!-- Arrow Icon -->
+            <div class="absolute top-6 right-6">
+              <div class="w-8 h-8 bg-[#E8E8E8] backdrop-blur-sm border border-white/20 rounded-lg flex items-center justify-center group-hover:bg-black/70 transition-all duration-300">
+                <svg 
+                  class="w-6 h-6 text-white transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- View All News Button -->
+    <div class="flex justify-start">
+      <button class="bg-black backdrop-blur-sm text-white font-semibold py-3 px-8 rounded-xl w-full lg:w-fit">
+        View all news
+      </button>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  /* Subtle animation for cards */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  article {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  article:nth-child(1) { animation-delay: 0.1s; }
+  article:nth-child(2) { animation-delay: 0.2s; }
+  article:nth-child(3) { animation-delay: 0.3s; }
+  article:nth-child(4) { animation-delay: 0.4s; }
+</style>

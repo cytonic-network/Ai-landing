@@ -4,6 +4,7 @@
 	--breakpoint-lg: 1200px;
 	--breakpoint-md: 744px;
 	--font-work: "work-sans", "sans-serif";
+	--font-aurore: "aurore", "cursive";
 }
 
 @theme inline {
@@ -12,6 +13,16 @@
 }
 
 @layer theme {
+	@font-face {
+		font-family: "aurore";
+		src:
+			url("/fonts/belle-aurore/LaBelleAurore.ttf") format("truetype"), ;
+		font-weight: 400;
+		/* Thin */
+		font-style: normal;
+		font-display: swap;
+	}
+
 	@font-face {
 		font-family: "work-sans";
 		src:
