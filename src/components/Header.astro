@@ -1,13 +1,16 @@
 ---
 import Logo from "../../public/icons/text-logo.svg";
+import Menu from "../../public/icons/menu.svg";
 ---
 
 <header
-    class="bg-main-gray h-[86px] flex px-10 items-center justify-between sticky top-0 z-50"
+    class="bg-main-gray h-[70px] lg:h-[86px] pt-4 flex lg:px-10 px-6 items-center justify-between sticky top-0 z-[60]"
 >
-    <Logo class="transition-all group-hover:fill-white fill-[#0A0A0A]" />
+    <Logo
+        class="transition-all group-hover:fill-white fill-[#0A0A0A] relative z-[60]"
+    />
 
-    <div class="flex gap-[30px] text-white text-[14px]">
+    <div class="hidden lg:flex gap-[30px] text-white text-[14px]">
         <a class="uppercase cursor-pointer">community</a>
         <a class="uppercase cursor-pointer">ecosystem</a>
         <a class="uppercase cursor-pointer">docs</a>
@@ -16,9 +19,76 @@ import Logo from "../../public/icons/text-logo.svg";
         <a class="uppercase cursor-pointer">news</a>
     </div>
 
-    <button
-        type="button"
-        class="text-[18px] font-semibold bg-white w-[154px] h-[54px] rounded-[8px] tracking-normal cursor-pointer"
-        >Join waitlist</button
+    <div class="flex items-center gap-4 relative z-[60]">
+        <button
+            type="button"
+            class="text-[18px] font-semibold bg-white w-[154px] h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+            >Join waitlist</button
+        >
+
+        <button id="menuToggle" class="lg:hidden text-white">
+            <Menu id="menuIcon" class="transition-transform duration-200" />
+        </button>
+    </div>
+
+    <div
+        id="mobileMenu"
+        class="fixed inset-0 bg-main-gray z-50 pt-[86px] px-10 lg:hidden hidden"
     >
+        <div class="flex flex-col h-full w-full relative">
+            <div
+                class="absolute flex items-center justify-center z-40 inset-0 pointer-events-none top-50"
+            >
+                <img src="/buble.png" class="opacity-20 scale-60" />
+            </div>
+
+            <div
+                class="flex flex-col h-full justify-center items-center relative z-50"
+            >
+                <div
+                    class="gap-12 flex flex-col text-white text-[24px] items-center my-auto"
+                >
+                    <a class="uppercase cursor-pointer">community</a>
+                    <a class="uppercase cursor-pointer">ecosystem</a>
+                    <a class="uppercase cursor-pointer">docs</a>
+                    <a class="uppercase cursor-pointer">socials</a>
+                    <a class="uppercase cursor-pointer">research</a>
+                    <a class="uppercase cursor-pointer">news</a>
+                </div>
+
+                <div class="w-full px-4 pb-6">
+                    <div class="gap-2 lg:gap-4 flex">
+                        <button
+                            type="button"
+                            class="w-full text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                            >Build manually</button
+                        >
+                        <button
+                            type="button"
+                            class="w-full text-[18px] font-semibold bg-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                            >Join waitlist</button
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
+
+<script is:inline>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("menuToggle");
+        const mobileMenu = document.getElementById("mobileMenu");
+        const menuIcon = document.getElementById("menuIcon");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = mobileMenu.classList.toggle("hidden");
+
+            if (isOpen) {
+                menuIcon.style.transform = "rotate(0deg)";
+            } else {
+                menuIcon.style.transform = "rotate(90deg)";
+            }
+        });
+    });
+</script>

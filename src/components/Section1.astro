@@ -6,14 +6,16 @@ import Image from "../../public/icons/image.svg";
 ---
 
 <div
-    class="h-[835px] bg-main-gray relative px-10 flex justify-center mb-[460px]"
+    class="h-[700px] lg:h-[835px] bg-main-gray relative px-6 py-6 lg:py-0 lg:px-10 flex justify-center mb-[460px]"
 >
     <img
         src="/buble.png"
-        class="opacity-60 absolute left-1/2 -translate-x-1/2 top-[50px]"
+        class="lg:opacity-60 absolute left-1/2 -translate-x-1/2 top-[66px] lg:top-[50px] scale-60 lg:scale-100"
     />
-    <div class="z-10 relative pt-[240px] min-w-[1120px]">
-        <div class="flex items-end justify-between">
+    <div class="z-10 relative lg:pt-[240px] w-full lg:w-fit lg:min-w-[1120px]">
+        <div
+            class="flex flex-col lg:flex-row lg:items-end h-full lg:h-fit justify-between"
+        >
             <div
                 class="uppercase text-white text-[46px] font-medium leading-[120%]"
             >
@@ -21,22 +23,22 @@ import Image from "../../public/icons/image.svg";
                 Cytonic AI
             </div>
 
-            <div class="gap-4 flex">
+            <div class="gap-2 lg:gap-4 flex">
                 <button
                     type="button"
-                    class="text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                    class="w-full lg:w-fit text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
                     >Build manually</button
                 >
                 <button
                     type="button"
-                    class="text-[18px] font-semibold bg-white w-[154px] h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                    class="w-full lg:w-fit text-[18px] font-semibold bg-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
                     >Join waitlist</button
                 >
             </div>
         </div>
 
         <div
-            class="bg-white w-[1120px] h-[603px] mt-8 rounded-[24px] border-light-gray border-1 overflow-hidden"
+            class="bg-white w-[1120px] h-[603px] mt-8 rounded-[24px] border-light-gray border-1 overflow-hidden hidden lg:block"
         >
             <div
                 class="bg-[#F5F5F5] h-[114px] pt-6 px-8 pb-4 flex gap-4 flex-col"
