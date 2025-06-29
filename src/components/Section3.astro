@@ -88,60 +88,232 @@ import TwoChecks from "../../public/icons/twoChecks.svg";
                 </div>
             </div>
 
-            <div
-                class="flex lg:hidden gap-4 pb-4 px-4 scroll-smooth pt-10 overflow-x-scroll -mt-10"
-            >
+            <div class="lg:hidden relative pb-4 pt-10 -mt-10 w-full">
                 <div
-                    class="bg-white pt-6 rounded-[24px] w-[332px] h-[370px] flex justify-center relative flex-shrink-0"
+                    id="info-carousel-container"
+                    class="flex gap-4 md:overflow-x-scroll md:h-[430px] md:pt-10 md:px-4 transition-transform duration-300 ease-in-out w-full md:w-auto"
                 >
-                    <div class="text-center flex flex-col gap-6">
-                        <p class="font-medium text-[24px] uppercase">
-                            Layer 1 Testnet
-                        </p>
-                        <span class="leading-[120%] text-[#939393]">
-                            Initial EVM and SVM execution<br /> environments are
-                            deployed on the<br /> Cytonic Layer 1 Testnet
-                        </span>
+                    <!-- Card 1 - Layer 1 Testnet -->
+                    <div class="w-full md:w-[332px] flex-shrink-0 px-4 md:px-0">
+                        <div
+                            class="bg-white pt-6 rounded-[24px] h-[370px] flex justify-center"
+                        >
+                            <div
+                                class="text-center flex flex-col gap-6 px-4 md:px-6"
+                            >
+                                <p class="font-medium text-[24px] uppercase">
+                                    Layer 1 Testnet
+                                </p>
+                                <span class="leading-[120%] text-[#939393]">
+                                    Initial EVM and SVM execution<br /> environments
+                                    are deployed on the<br /> Cytonic Layer 1 Testnet
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 - Lightwave Network Upgrade -->
+                    <div class="w-full md:w-[332px] flex-shrink-0 px-4 md:px-0">
+                        <div
+                            class="bg-white pt-6 rounded-[24px] h-[370px] flex justify-center md:-mt-10"
+                        >
+                            <div
+                                class="text-center flex flex-col gap-6 px-4 md:px-6"
+                            >
+                                <p
+                                    class="font-medium text-[24px] uppercase leading-[110%]"
+                                >
+                                    Lightwave<br /> Network Upgrade
+                                </p>
+                                <span class="leading-[120%] text-[#939393]">
+                                    The upcoming Lightwave release will upgrade
+                                    our current EVM and SVM network extensions
+                                    to allow for increased performance and
+                                    introduce two new network extensions
+                                    featuring MoveVM and CosmWASM
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 - Unified User Experience -->
+                    <div class="w-full md:w-[332px] flex-shrink-0 px-4 md:px-0">
+                        <div
+                            class="bg-white pt-6 rounded-[24px] h-[370px] flex justify-center"
+                        >
+                            <div
+                                class="text-center flex flex-col gap-6 px-4 md:px-6"
+                            >
+                                <p
+                                    class="font-medium text-[24px] uppercase leading-[110%]"
+                                >
+                                    Unified User<br /> Experience
+                                </p>
+                                <span class="leading-[120%] text-[#939393]">
+                                    Lightwave sets the stage for native cross-VM
+                                    communication. EVM, SVM, MoveVM, and
+                                    CosmWASM will feel like one VM. Creators
+                                    gain composability; users have zero broken
+                                    flows. Rapid upgrades will keep sanding
+                                    friction until Cytonic feels effortless
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div
-                    class="bg-white pt-6 rounded-[24px] w-[332px] h-[370px] flex justify-center relative px-6 flex-shrink-0 -mt-10"
-                >
-                    <div class="text-center flex flex-col gap-6">
-                        <p
-                            class="font-medium text-[24px] uppercase leading-[110%]"
+                <div class="justify-center mt-6 md:hidden flex space-x-[65px]">
+                    <button
+                        class="w-4 h-4 rounded-full info-carousel-dot border-1 border-[#646464] active relative"
+                        data-slide="0"
+                        ><div
+                            class="w-[65px] h-[1px] bg-[#646464] absolute -right-[66px]"
                         >
-                            Lightwave<br /> Network Upgrade
-                        </p>
-                        <span class="leading-[120%] text-[#939393]">
-                            The upcoming Lightwave release will upgrade our
-                            current EVM and SVM network extensions to allow for
-                            increased performance and introduce two new network
-                            extensions featuring MoveVM and CosmWASM
-                        </span>
-                    </div>
-                </div>
-
-                <div
-                    class="bg-white pt-6 rounded-[24px] w-[332px] h-[370px] flex justify-center relative px-6 flex-shrink-0"
-                >
-                    <div class="text-center flex flex-col gap-6">
-                        <p
-                            class="font-medium text-[24px] uppercase leading-[110%]"
+                        </div></button
+                    >
+                    <button
+                        class="w-4 h-4 bg-[#3C3C3C] rounded-full info-carousel-dot border-1 border-[#646464] relative"
+                        data-slide="1"
+                    >
+                        <div
+                            class="w-[65px] h-[1px] bg-[#646464] absolute -right-[66px]"
                         >
-                            Unified User<br /> Experience
-                        </p>
-                        <span class="leading-[120%] text-[#939393]">
-                            Lightwave sets the stage for native cross-VM
-                            communication. EVM, SVM, MoveVM, and CosmWASM will
-                            feel like one VM. Creators gain composability; users
-                            have zero broken flows. Rapid upgrades will keep
-                            sanding friction until Cytonic feels effortless
-                        </span>
-                    </div>
+                        </div></button
+                    >
+                    <button
+                        class="w-4 h-4 bg-[#3C3C3C] rounded-full info-carousel-dot border-1 border-[#646464]"
+                        data-slide="2"></button>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    // Initialize only on mobile
+    function initCarousel() {
+        const isMobile = window.innerWidth < 768;
+
+        if (isMobile) {
+            let currentInfoSlide = 0;
+            const totalInfoSlides = 3;
+            const infoContainer = document.getElementById(
+                "info-carousel-container",
+            );
+            const infoDots = document.querySelectorAll(".info-carousel-dot");
+            const slides = document.querySelectorAll(
+                "#info-carousel-container > div",
+            );
+
+            function calculateSlideWidth() {
+                const container = infoContainer.parentElement;
+                const containerStyle = window.getComputedStyle(container);
+                const paddingLeft = parseFloat(containerStyle.paddingLeft);
+                const paddingRight = parseFloat(containerStyle.paddingRight);
+
+                return window.innerWidth - paddingLeft - paddingRight + 16;
+            }
+
+            function updateInfoCarousel(slideIndex) {
+                const slideWidth = calculateSlideWidth();
+                const translateX = -slideIndex * slideWidth;
+                infoContainer.style.transform = `translateX(${translateX}px)`;
+
+                // Update dots
+                infoDots.forEach((dot, index) => {
+                    if (index === slideIndex) {
+                        dot.classList.add("active");
+                        dot.classList.remove("bg-[#3C3C3C]");
+                        dot.classList.add("bg-[#3C3C3C]");
+                    } else {
+                        dot.classList.remove("active");
+                        dot.classList.remove("bg-[#3C3C3C]");
+                        dot.classList.add("bg-[#3C3C3C]");
+                    }
+                });
+            }
+
+            // Устанавливаем правильную ширину для каждого слайда
+
+            updateInfoCarousel(currentInfoSlide);
+
+            // Обработчики событий
+            infoDots.forEach((dot, index) => {
+                dot.addEventListener("click", () => {
+                    currentInfoSlide = index;
+                    updateInfoCarousel(currentInfoSlide);
+                });
+            });
+
+            let infoStartX = 0;
+            let isInfoDragging = false;
+
+            infoContainer.addEventListener("touchstart", (e) => {
+                infoStartX = e.touches[0].clientX;
+                isInfoDragging = true;
+            });
+
+            infoContainer.addEventListener("touchmove", (e) => {
+                if (!isInfoDragging) return;
+                e.preventDefault();
+
+                // Плавное перемещение при драге
+                const currentX = e.touches[0].clientX;
+                const diff = infoStartX - currentX;
+                const slideWidth = calculateSlideWidth();
+                const currentPosition = -currentInfoSlide * slideWidth;
+                infoContainer.style.transform = `translateX(${currentPosition - diff}px)`;
+            });
+
+            infoContainer.addEventListener("touchend", (e) => {
+                if (!isInfoDragging) return;
+                isInfoDragging = false;
+
+                const endX = e.changedTouches[0].clientX;
+                const diff = infoStartX - endX;
+                const slideWidth = calculateSlideWidth();
+
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0 && currentInfoSlide < totalInfoSlides - 1) {
+                        currentInfoSlide++;
+                    } else if (diff < 0 && currentInfoSlide > 0) {
+                        currentInfoSlide--;
+                    }
+                }
+
+                updateInfoCarousel(currentInfoSlide);
+            });
+
+            window.addEventListener("resize", () => {
+                if (window.innerWidth >= 768) {
+                    infoContainer.style.transform = "none";
+                    slides.forEach((slide) => {
+                        slide.style.width = "";
+                    });
+                    infoContainer.style.width = "";
+                } else {
+                    setupSlides();
+                    updateInfoCarousel(currentInfoSlide);
+                }
+            });
+        }
+    }
+
+    // Initialize on load and on resize
+    document.addEventListener("DOMContentLoaded", initCarousel);
+    window.addEventListener("resize", initCarousel);
+</script>
+
+<style>
+    .info-carousel-dot.active {
+        background-color: white;
+    }
+
+    .md\:overflow-x-auto::-webkit-scrollbar {
+        display: none;
+    }
+    .md\:overflow-x-auto {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
