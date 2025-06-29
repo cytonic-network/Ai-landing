@@ -2,23 +2,22 @@
 import DownRightArrow from "../../public/icons/downRightArrow.svg";
 ---
 
-<div class="relative px-10 flex justify-center mb-[200px]">
-    <div class="min-w-[1120px] flex flex-col">
+<div class="relative px-10 flex justify-center mb-20 lg:mb-[200px]">
+    <div class="lg:min-w-[1120px] flex flex-col">
         <div class="mb-50">
-            <div class="flex justify-between">
+            <div class="flex flex-col lg:flex-row justify-between gap-6">
+                <div class="order-1 lg:order-2 pt-2">
+                    <p class="font-medium text-[24px]">01</p>
+                    <span class="text-[18px]">/ Vision for Cytonic</span>
+                </div>
+
                 <div
-                    class="uppercase text-[#343434] text-[46px] font-medium leading-[120%]"
+                    class="order-2 lg:order-1 uppercase text-[#343434] text-[46px] font-medium leading-[120%]"
                 >
                     A new era where prompts<br />create fullstack crypto <br
                     />projects
                 </div>
-
-                <div class="pt-2">
-                    <p class="font-medium text-[24px]">01</p>
-                    <span class="text-[18px]">/ Vision for Cytonic</span>
-                </div>
             </div>
-
             <div
                 class="w-[647px] ml-auto mt-6 text-[#939393] leading-[130%] text-[24px] tracking-[-2%]"
             >
@@ -38,8 +37,8 @@ import DownRightArrow from "../../public/icons/downRightArrow.svg";
             </div>
         </div>
 
-        <div class="flex justify-between">
-            <div class="flex gap-6">
+        <div class="flex justify-between flex-col lg:flex-row gap-10 lg:gap-0">
+            <div class="flex gap-6 order-2 lg:order-1">
                 <div class="flex flex-col">
                     <div
                         class="relative font-medium border-1 border-[#E8E8E8] w-10 h-10 text-[24px] rounded-full flex items-center justify-center mb-[115px]"
@@ -105,16 +104,14 @@ import DownRightArrow from "../../public/icons/downRightArrow.svg";
                     </div>
                 </div>
             </div>
-            <div>
-                <div
-                    class="w-[552px] text-[#939393] leading-[130%] text-[24px] tracking-[-2%]"
-                >
-                    Cytonic is a multi-virtual-machine (Multi-VM) blockchain
-                    built for hyper-scale. Its modular design separates
-                    settlement, data availability, and execution, so any
-                    developer can deploy a dApp in the VM they know best—without
-                    fragmenting liquidity or user experience
-                </div>
+            <div
+                class="w-[552px] text-[#939393] leading-[130%] text-[24px] tracking-[-2%] order-1 lg:order-2"
+            >
+                Cytonic is a multi-virtual-machine (Multi-VM) blockchain built
+                for hyper-scale. Its modular design separates settlement, data
+                availability, and execution, so any developer can deploy a dApp
+                in the VM they know best—without fragmenting liquidity or user
+                experience
             </div>
         </div>
         <div>

@@ -8,7 +8,7 @@ import TwoChecks from "../../public/icons/twoChecks.svg";
 ---
 
 <div
-    class="relative bg-main-gray h-[983px] w-full rounded-[72px] flex justify-center"
+    class="relative bg-main-gray h-[713px] lg:h-[983px] w-full rounded-[72px] flex justify-center overflow-hidden"
 >
     <div class="-z-0 absolute w-full flex flex-col h-full justify-between">
         <NetworkText1 />
@@ -18,67 +18,128 @@ import TwoChecks from "../../public/icons/twoChecks.svg";
     </div>
 
     <div
-        class="pt-20 px-10 pb-[82px] flex flex-col items-center gap-[258px] w-full"
+        class="pt-[74px] relative lg:pt-20 lg:px-10 lg:pb-[82px] flex flex-col items-center gap-[96px] lg:gap-[258px] w-full"
     >
         <div class="flex items-center flex-col gap-2 text-white font-medium">
             <p class="text-[24px]">03</p>
             <span class="text-[18px]">/ Network status</span>
         </div>
 
-        <div class="flex gap-4">
-            <div
-                class="bg-white rounded-[24px] h-[504px] w-[363px] flex justify-center relative"
-            >
-                <div class="absolute -top-6">
-                    <TwoChecks />
+        <div class="w-full max-w-full flex lg:items-center lg:justify-center">
+            <div class="hidden lg:flex gap-4 items-start justify-center">
+                <div
+                    class="bg-white pt-6 lg:pt-0 rounded-[24px] w-[332px] h-[370px] lg:h-[504px] lg:w-[363px] flex justify-center relative"
+                >
+                    <div class="absolute lg:block hidden -top-6">
+                        <TwoChecks />
+                    </div>
+                    <div class="text-center flex flex-col gap-6">
+                        <p class="font-medium text-[24px] lg:mt-30 uppercase">
+                            Layer 1 Testnet
+                        </p>
+                        <span class="leading-[120%] text-[#939393]">
+                            Initial EVM and SVM execution<br /> environments are
+                            deployed on the<br /> Cytonic Layer 1 Testnet
+                        </span>
+                    </div>
                 </div>
-                <div class="text-center flex flex-col gap-6">
-                    <p class="font-medium text-[24px] mt-30 uppercase">
-                        Layer 1 Testnet
-                    </p>
-                    <span class="leading-[120%] text-[#939393]">
-                        Initial EVM and SVM execution<br /> environments are deployed
-                        on the<br /> Cytonic Layer 1 Testnet
-                    </span>
+
+                <div
+                    class="bg-white pt-6 lg:pt-0 rounded-[24px] w-[332px] h-[370px] lg:h-[504px] lg:w-[363px] flex justify-center relative -mt-[71px] px-6"
+                >
+                    <div class="lg:absolute lg:block hidden -top-18">
+                        <Rocket />
+                    </div>
+                    <div class="text-center flex flex-col gap-6">
+                        <p
+                            class="font-medium text-[24px] lg:mt-30 uppercase leading-[110%]"
+                        >
+                            Lightwave<br /> Network Upgrade
+                        </p>
+                        <span class="leading-[120%] text-[#939393]">
+                            The upcoming Lightwave release will upgrade our
+                            current EVM and SVM network extensions to allow for
+                            increased performance and introduce two new network
+                            extensions featuring MoveVM and CosmWASM
+                        </span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white pt-6 lg:pt-0 rounded-[24px] w-[332px] h-[370px] lg:h-[504px] lg:w-[363px] flex justify-center relative px-6"
+                >
+                    <div class="lg:absolute lg:block -top-22 hidden">
+                        <Globe />
+                    </div>
+                    <div class="text-center flex flex-col gap-6">
+                        <p
+                            class="font-medium text-[24px] lg:mt-30 uppercase leading-[110%]"
+                        >
+                            Unified User<br /> Experience
+                        </p>
+                        <span class="leading-[120%] text-[#939393]">
+                            Lightwave sets the stage for native cross-VM
+                            communication. EVM, SVM, MoveVM, and CosmWASM will
+                            feel like one VM. Creators gain composability; users
+                            have zero broken flows. Rapid upgrades will keep
+                            sanding friction until Cytonic feels effortless
+                        </span>
+                    </div>
                 </div>
             </div>
 
             <div
-                class="bg-white rounded-[24px] h-[504px] w-[363px] flex justify-center relative bottom-[71px] px-6"
+                class="flex lg:hidden gap-4 pb-4 px-4 scroll-smooth pt-10 overflow-x-scroll -mt-10"
             >
-                <div class="absolute -top-18">
-                    <Rocket />
+                <div
+                    class="bg-white pt-6 rounded-[24px] w-[332px] h-[370px] flex justify-center relative flex-shrink-0"
+                >
+                    <div class="text-center flex flex-col gap-6">
+                        <p class="font-medium text-[24px] uppercase">
+                            Layer 1 Testnet
+                        </p>
+                        <span class="leading-[120%] text-[#939393]">
+                            Initial EVM and SVM execution<br /> environments are
+                            deployed on the<br /> Cytonic Layer 1 Testnet
+                        </span>
+                    </div>
                 </div>
-                <div class="text-center flex flex-col gap-6">
-                    <p class="font-medium text-[24px] mt-30 uppercase">
-                        Lightwave<br /> Network Upgrade
-                    </p>
-                    <span class="leading-[120%] text-[#939393]">
-                        The upcoming Lightwave release will upgrade our current
-                        EVM and SVM network extensions to allow for increased
-                        performance and introduce two new network extensions
-                        featuring MoveVM and CosmWASM
-                    </span>
-                </div>
-            </div>
 
-            <div
-                class="bg-white rounded-[24px] h-[504px] w-[363px] flex justify-center relative px-6"
-            >
-                <div class="absolute -top-22">
-                    <Globe />
+                <div
+                    class="bg-white pt-6 rounded-[24px] w-[332px] h-[370px] flex justify-center relative px-6 flex-shrink-0 -mt-10"
+                >
+                    <div class="text-center flex flex-col gap-6">
+                        <p
+                            class="font-medium text-[24px] uppercase leading-[110%]"
+                        >
+                            Lightwave<br /> Network Upgrade
+                        </p>
+                        <span class="leading-[120%] text-[#939393]">
+                            The upcoming Lightwave release will upgrade our
+                            current EVM and SVM network extensions to allow for
+                            increased performance and introduce two new network
+                            extensions featuring MoveVM and CosmWASM
+                        </span>
+                    </div>
                 </div>
-                <div class="text-center flex flex-col gap-6">
-                    <p class="font-medium text-[24px] mt-30 uppercase">
-                        Unified User<br /> Experience
-                    </p>
-                    <span class="leading-[120%] text-[#939393]">
-                        Lightwave sets the stage for native cross-VM
-                        communication. EVM, SVM, MoveVM, and CosmWASM will feel
-                        like one VM. Creators gain composability; users have
-                        zero broken flows. Rapid upgrades will keep sanding
-                        friction until Cytonic feels effortless
-                    </span>
+
+                <div
+                    class="bg-white pt-6 rounded-[24px] w-[332px] h-[370px] flex justify-center relative px-6 flex-shrink-0"
+                >
+                    <div class="text-center flex flex-col gap-6">
+                        <p
+                            class="font-medium text-[24px] uppercase leading-[110%]"
+                        >
+                            Unified User<br /> Experience
+                        </p>
+                        <span class="leading-[120%] text-[#939393]">
+                            Lightwave sets the stage for native cross-VM
+                            communication. EVM, SVM, MoveVM, and CosmWASM will
+                            feel like one VM. Creators gain composability; users
+                            have zero broken flows. Rapid upgrades will keep
+                            sanding friction until Cytonic feels effortless
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
