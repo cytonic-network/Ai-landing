@@ -80,14 +80,22 @@ import Menu from "../../public/icons/menu.svg";
         const menuToggle = document.getElementById("menuToggle");
         const mobileMenu = document.getElementById("mobileMenu");
         const menuIcon = document.getElementById("menuIcon");
+        const body = document.body;
 
         menuToggle.addEventListener("click", function () {
             const isOpen = mobileMenu.classList.toggle("hidden");
 
+            // Анимация иконки
             if (isOpen) {
                 menuIcon.style.transform = "rotate(0deg)";
             } else {
                 menuIcon.style.transform = "rotate(90deg)";
+            }
+
+            if (!isOpen) {
+                body.style.overflow = "hidden";
+            } else {
+                body.style.overflow = "";
             }
         });
     });
