@@ -6,32 +6,38 @@ import Image from "../../public/icons/image.svg";
 ---
 
 <div
-    class="h-[700px] lg:h-[835px] bg-main-gray relative px-6 py-6 lg:py-0 lg:px-10 flex justify-center mb-[141px] lg:mb-[460px]"
+    class="h-[700px] lg:h-[835px] bg-main-gray relative py-6 lg:py-0 lg:px-10 flex justify-center mb-[141px] lg:mb-[460px]"
 >
     <img
         src="/buble.png"
-        class="lg:opacity-60 absolute left-1/2 -translate-x-1/2 top-[66px] lg:top-[50px] scale-60 lg:scale-100"
+        class="lg:opacity-60 absolute left-1/2 -translate-x-1/2 top-[200px] w-[300px] h-[300px] lg:top-[50px] lg:w-[600px] lg:h-[600px]"
     />
     <div class="z-10 relative lg:pt-[240px] w-full lg:w-fit lg:min-w-[1120px]">
         <div
             class="flex flex-col lg:flex-row lg:items-end h-full lg:h-fit justify-between"
         >
             <div
-                class="uppercase text-white text-[46px] font-medium leading-[120%]"
+                class="pl-6 md:pl-0 text-white font-medium flex flex-col gap-4 md:gap-0"
             >
-                CREATOR LAYER-1 BLOCKCHAIN<br />Build fullstack dApps <br />with
-                Cytonic AI
+                <span
+                    class="text-[32px] md:text-[46px] leading-[110%] md:leading-[120%]"
+                    >CREATOR LAYER-1<br class="md:hidden" /> BLOCKCHAIN</span
+                >
+                <span
+                    class="text-[#939393] md:text-white text-[24px] md:text-[46px] leading-[110%] md:uppercase"
+                    >Build fullstack dApps <br />with Cytonic AI</span
+                >
             </div>
 
-            <div class="gap-2 lg:gap-4 flex">
+            <div class="px-4 md:px-0 gap-2 lg:gap-4 flex">
                 <button
                     type="button"
-                    class="w-full lg:w-fit text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                    class="w-full whitespace-nowrap lg:w-fit text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
                     >Build manually</button
                 >
                 <button
                     type="button"
-                    class="w-full lg:w-fit text-[18px] font-semibold bg-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                    class="w-full whitespace-nowrap lg:w-fit text-[18px] font-semibold bg-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
                     >Join waitlist</button
                 >
             </div>
