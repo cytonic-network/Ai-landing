@@ -1,6 +1,6 @@
 ---
-import Menu from '../../public/icons/menu.svg';
-import Logo from '../../public/icons/text-logo.svg';
+import Menu from "@assets/icons/menu.svg";
+import Logo from "@assets/icons/text-logo.svg";
 ---
 
 <header
@@ -102,34 +102,15 @@ import Logo from '../../public/icons/text-logo.svg';
     </div>
 </header>
 
-<script is:inline>
-    function scrollToSection(id) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: "smooth" });
-        }
+<script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+    const menuIcon = document.getElementById("menuIcon");
+    const body = document.body;
 
-        const mobileMenu = document.getElementById("mobileMenu");
-        if (!mobileMenu.classList.contains("hidden")) {
-            mobileMenu.classList.add("hidden");
-            document.getElementById("menuIcon").style.transform =
-                "rotate(0deg)";
-            document.body.style.overflow = "";
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", function () {
-        const menuToggle = document.getElementById("menuToggle");
-        const mobileMenu = document.getElementById("mobileMenu");
-        const menuIcon = document.getElementById("menuIcon");
-        const body = document.body;
-
-        menuToggle.addEventListener("click", function () {
-            const isOpen = mobileMenu.classList.toggle("hidden");
-            menuIcon.style.transform = isOpen
-                ? "rotate(0deg)"
-                : "rotate(90deg)";
-            body.style.overflow = isOpen ? "" : "hidden";
-        });
+    menuToggle.addEventListener("click", function () {
+        const isOpen = mobileMenu.classList.toggle("hidden");
+        menuIcon.style.transform = isOpen ? "rotate(0deg)" : "rotate(90deg)";
+        body.style.overflow = isOpen ? "" : "hidden";
     });
 </script>

@@ -1,8 +1,8 @@
 ---
-import Arrow from "../../public/icons/arrow.svg";
-import Clock from "../../public/icons/clock.svg";
-import Image from "../../public/icons/image.svg";
-import Paperclip from "../../public/icons/paperclip.svg";
+import Arrow from "@assets/icons/arrow.svg";
+import Clock from "@assets/icons/clock.svg";
+import Image from "@assets/icons/image.svg";
+import Paperclip from "@assets/icons/paperclip.svg";
 ---
 
 <div
@@ -177,23 +177,19 @@ import Paperclip from "../../public/icons/paperclip.svg";
     </div>
 </div>
 
-<script is:inline>
-    function updateButtonState() {
-        const textarea = document.getElementById("messageInput");
-        const button = document.getElementById("submitButton");
-        const charCount = document.getElementById("charCount");
+<script>
+    const textarea = document.getElementById("messageInput");
+    const button = document.getElementById("submitButton");
+    const charCount = document.getElementById("charCount");
 
-        const currentLength = textarea.value.length;
-        charCount.textContent = `${currentLength} / 200`;
+    const currentLength = textarea.value.length;
+    charCount.textContent = `${currentLength} / 200`;
 
-        if (textarea.value.trim() === "") {
-            button.disabled = true;
-            button.style.backgroundColor = "#E8E8E8";
-        } else {
-            button.disabled = false;
-            button.style.backgroundColor = "#000000";
-        }
+    if (textarea.value.trim() === "") {
+        button.disabled = true;
+        button.style.backgroundColor = "#E8E8E8";
+    } else {
+        button.disabled = false;
+        button.style.backgroundColor = "#000000";
     }
-
-    document.addEventListener("DOMContentLoaded", updateButtonState);
 </script>
