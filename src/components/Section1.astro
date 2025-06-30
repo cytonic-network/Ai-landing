@@ -36,7 +36,7 @@ import Paperclip from "@assets/icons/paperclip.svg";
             <div class="px-4 md:px-0 gap-2 lg:gap-4 flex">
                 <button
                     type="button"
-                    onclick="window.location.href='https://www.cytonic.com/testnet'"
+                    onclick="window.location.href='https://docs.cytonic.com'"
                     class="border border-transparent hover:border-black duration-300 transition-all w-full whitespace-nowrap lg:w-fit text-[16px] md:text-[18px] font-semibold bg-white text-black px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
                     >Build manually</button
                 >
@@ -171,7 +171,6 @@ import Paperclip from "@assets/icons/paperclip.svg";
                                     onclick="window.location.href='https://form.typeform.com/to/Mmh00bLK'"
                                     class="w-10 h-10 rounded-[8px] flex items-center justify-center rotate-180 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                                     style="background-color: #E8E8E8;"
-                                    disabled
                                 >
                                     <Arrow color="white" />
                                 </button>
@@ -184,19 +183,21 @@ import Paperclip from "@assets/icons/paperclip.svg";
     </div>
 </div>
 
-<script>
-    const textarea = document.getElementById("messageInput");
-    const button = document.getElementById("submitButton");
-    const charCount = document.getElementById("charCount");
+<script is:inline>
+    function updateButtonState() {
+        const textarea = document.getElementById("messageInput");
+        const button = document.getElementById("submitButton");
+        const charCount = document.getElementById("charCount");
 
-    const currentLength = textarea.value.length;
-    charCount.textContent = `${currentLength} / 200`;
+        const currentLength = textarea.value.length;
+        charCount.textContent = `${currentLength} / 200`;
 
-    if (textarea.value.trim() === "") {
-        button.disabled = true;
-        button.style.backgroundColor = "#E8E8E8";
-    } else {
-        button.disabled = false;
-        button.style.backgroundColor = "#000000";
+        if (textarea.value.trim() === "") {
+            button.disabled = true;
+            button.style.backgroundColor = "#E8E8E8";
+        } else {
+            button.disabled = false;
+            button.style.backgroundColor = "#000000";
+        }
     }
 </script>
