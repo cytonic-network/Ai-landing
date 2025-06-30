@@ -154,11 +154,11 @@ import Image from "../../public/icons/image.svg";
                                 </span>
                             </div>
 
-                            <div class="flex items-center gap-2">
+                            <div class="flex items-center gap-4">
                                 <span
                                     id="charCount"
                                     class="text-[14px] text-[#C0C0C0]"
-                                    >0/200</span
+                                    >0 / 200</span
                                 >
                                 <button
                                     id="submitButton"
@@ -184,7 +184,7 @@ import Image from "../../public/icons/image.svg";
         const charCount = document.getElementById("charCount");
 
         const currentLength = textarea.value.length;
-        charCount.textContent = `${currentLength}/200`;
+        charCount.textContent = `${currentLength} / 200`;
 
         if (textarea.value.trim() === "") {
             button.disabled = true;
@@ -195,6 +195,5 @@ import Image from "../../public/icons/image.svg";
         }
     }
 
-    // Инициализация при загрузке
     document.addEventListener("DOMContentLoaded", updateButtonState);
 </script>
