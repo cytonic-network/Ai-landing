@@ -32,12 +32,12 @@ import Image from "../../public/icons/image.svg";
             <div class="px-4 md:px-0 gap-2 lg:gap-4 flex">
                 <button
                     type="button"
-                    class="w-full whitespace-nowrap lg:w-fit text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                    class="border border-transparent hover:border-white duration-300 transition-all w-full whitespace-nowrap lg:w-fit text-[18px] font-semibold bg-black text-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
                     >Build manually</button
                 >
                 <button
                     type="button"
-                    class="w-full whitespace-nowrap lg:w-fit text-[18px] font-semibold bg-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer"
+                    class="w-full whitespace-nowrap lg:w-fit text-[18px] font-semibold bg-white px-6 h-[54px] rounded-[8px] tracking-normal cursor-pointer border border-transparent hover:border-black transition-all"
                     >Join waitlist</button
                 >
             </div>
@@ -130,11 +130,15 @@ import Image from "../../public/icons/image.svg";
                     <div
                         class="border-light-gray border-1 bg-[#F5F5F5] h-[104px] rounded-[16px] pt-4 pb-2 pl-4 pr-2 justify-between flex flex-col"
                     >
-                        <p class="text-[#818181] text-[14px]">
-                            Ask whatever you want...
-                        </p>
+                        <textarea
+                            id="messageInput"
+                            class="text-[14px] placeholder:text-[#818181] h-[40px] focus:outline-none focus:border-none resize-none"
+                            maxlength="200"
+                            rows="1"
+                            placeholder="Ask whatever you want..."
+                            oninput="updateButtonState()"></textarea>
 
-                        <div class="flex justify-between">
+                        <div class="flex justify-between items-center">
                             <div class="flex gap-6">
                                 <span class="flex gap-2 items-center">
                                     <Paperclip />
@@ -149,10 +153,21 @@ import Image from "../../public/icons/image.svg";
                                     </p>
                                 </span>
                             </div>
-                            <div
-                                class="bg-black w-10 h-10 rounded-[8px] flex items-center justify-center rotate-180"
-                            >
-                                <Arrow color={"white"} />
+
+                            <div class="flex items-center gap-2">
+                                <span
+                                    id="charCount"
+                                    class="text-[14px] text-[#C0C0C0]"
+                                    >0/200</span
+                                >
+                                <button
+                                    id="submitButton"
+                                    class="w-10 h-10 rounded-[8px] flex items-center justify-center rotate-180 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                                    style="background-color: #E8E8E8;"
+                                    disabled
+                                >
+                                    <Arrow color="white" />
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -161,3 +176,25 @@ import Image from "../../public/icons/image.svg";
         </div>
     </div>
 </div>
+
+<script is:inline>
+    function updateButtonState() {
+        const textarea = document.getElementById("messageInput");
+        const button = document.getElementById("submitButton");
+        const charCount = document.getElementById("charCount");
+
+        const currentLength = textarea.value.length;
+        charCount.textContent = `${currentLength}/200`;
+
+        if (textarea.value.trim() === "") {
+            button.disabled = true;
+            button.style.backgroundColor = "#E8E8E8";
+        } else {
+            button.disabled = false;
+            button.style.backgroundColor = "#000000";
+        }
+    }
+
+    // Инициализация при загрузке
+    document.addEventListener("DOMContentLoaded", updateButtonState);
+</script>
