@@ -7,7 +7,7 @@ import TwoChecks from '@assets/icons/twoChecks.svg';
 ---
 
 <section
-    class="relative bg-main-gray h-[713px] lg:h-[983px] w-full rounded-[40px] md:rounded-[72px] flex justify-center overflow-hidden max-w-[1200px] mx-auto"
+    class="relative bg-main-gray h-[713px] lg:h-[983px] w-full rounded-[40px] md:rounded-[72px] flex justify-center overflow-hidden max-w-[1200px] mx-auto mb-20 md:mb-50"
 >
     <div class="-z-0 absolute w-full flex flex-col h-full justify-between">
         <NetworkText1 />
@@ -32,14 +32,125 @@ import TwoChecks from '@assets/icons/twoChecks.svg';
                     <div class="absolute lg:block hidden -top-6">
                         <TwoChecks />
                     </div>
-                    <div class="text-center flex flex-col gap-6">
-                        <p class="font-medium text-[24px] lg:mt-30 uppercase">
-                            Layer 1 Testnet
-                        </p>
-                        <span class="leading-[120%] text-[#939393]">
-                            Initial EVM and SVM execution<br /> environments are
-                            deployed on the<br /> Cytonic Layer 1 Testnet
-                        </span>
+                    <div
+                        class="h-full pb-6 w-full px-6 flex flex-col justify-between"
+                    >
+                        <div class="text-center flex flex-col gap-6">
+                            <p
+                                class="font-medium text-[24px] lg:mt-30 uppercase"
+                            >
+                                Layer 1 Testnet
+                            </p>
+                            <span class="leading-[120%] text-[#939393]">
+                                Initial EVM and SVM execution<br /> environments
+                                are deployed on the<br /> Cytonic Layer 1 Testnet
+                            </span>
+                        </div>
+
+                        <div class="flex flex-col gap-2">
+                            <button
+                                type="button"
+                                onclick="window.location.href='https://github.com/cytonic-network/cytonic-l1-testnet-validator'"
+                                class="cursor-pointer p-4 pr-2 w-full border border-[#E8E8E8] rounded-[16px] group flex justify-between hover:bg-[#F5F5F5] transition-all duration-200"
+                            >
+                                <div
+                                    class="text-[18px] font-medium leading-[130%]"
+                                >
+                                    <p>Layer 1</p>
+                                    <span class="text-[#939393]">10, 000</span>
+                                </div>
+
+                                <div class="flex items-end">
+                                    <div
+                                        class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center transition-all duration-200"
+                                    >
+                                        <svg
+                                            class="w-6 h-6 text-white"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M7 17l9.2-9.2M17 17V7H7"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="flex gap-2">
+                                <button
+                                    type="button"
+                                    onclick="window.location.href='https://www.cytonic.com/svm'"
+                                    class="cursor-pointer p-4 pr-2 w-full border border-[#E8E8E8] rounded-[16px] group flex justify-between hover:bg-[#F5F5F5] transition-all duration-200"
+                                >
+                                    <div
+                                        class="text-[18px] text-left font-medium leading-[130%]"
+                                    >
+                                        <p>SVM</p>
+                                        <span class="text-[#939393]"
+                                            >30, 000</span
+                                        >
+                                    </div>
+
+                                    <div class="flex items-end">
+                                        <div
+                                            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center transition-all duration-200"
+                                        >
+                                            <svg
+                                                class="w-6 h-6 text-white"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M7 17l9.2-9.2M17 17V7H7"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                                <button
+                                    type="button"
+                                    onclick="window.location.href='https://www.cytonic.com/evm'"
+                                    class="cursor-pointer p-4 pr-2 w-full border border-[#E8E8E8] rounded-[16px] group flex justify-between hover:bg-[#F5F5F5] transition-all duration-200"
+                                >
+                                    <div
+                                        class="text-left text-[18px] font-medium leading-[130%]"
+                                    >
+                                        <p>EVM</p>
+                                        <span class="text-[#939393]"
+                                            >40, 000</span
+                                        >
+                                    </div>
+
+                                    <div class="flex items-end">
+                                        <div
+                                            class="w-10 h-10 bg-gray-200 group-hover:bg-black rounded-lg flex items-center justify-center transition-all duration-200"
+                                        >
+                                            <svg
+                                                class="w-6 h-6 text-white"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M7 17l9.2-9.2M17 17V7H7"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -95,7 +206,7 @@ import TwoChecks from '@assets/icons/twoChecks.svg';
                     <!-- Card 1 - Layer 1 Testnet -->
                     <div class="w-full md:w-[332px] flex-shrink-0 px-4 md:px-0">
                         <div
-                            class="bg-white pt-6 rounded-[24px] h-[370px] flex justify-center"
+                            class="bg-white pt-6 rounded-[24px] h-[370px] flex justify-center flex-col px-2 pb-4 gap-[60px]"
                         >
                             <div
                                 class="text-center flex flex-col gap-6 px-4 md:px-6"
@@ -103,10 +214,119 @@ import TwoChecks from '@assets/icons/twoChecks.svg';
                                 <p class="font-medium text-[24px] uppercase">
                                     Layer 1 Testnet
                                 </p>
-                                <span class="leading-[120%] text-[#939393]">
+                                <span
+                                    class="leading-[120%] text-[#939393] whitespace-nowrap"
+                                >
                                     Initial EVM and SVM execution<br /> environments
                                     are deployed on the<br /> Cytonic Layer 1 Testnet
                                 </span>
+                            </div>
+
+                            <div class="flex flex-col gap-2">
+                                <button
+                                    type="button"
+                                    onclick="window.location.href='https://github.com/cytonic-network/cytonic-l1-testnet-validator'"
+                                    class="cursor-pointer p-4 pr-2 w-full border border-[#E8E8E8] rounded-[16px] group flex justify-between hover:bg-[#F5F5F5] transition-all duration-200"
+                                >
+                                    <div
+                                        class="text-[18px] font-medium leading-[130%]"
+                                    >
+                                        <p>Layer 1</p>
+                                        <span class="text-[#939393]"
+                                            >10, 000</span
+                                        >
+                                    </div>
+
+                                    <div class="flex items-end">
+                                        <div
+                                            class="w-10 h-10 bg-black rounded-lg flex items-center justify-center transition-all duration-200"
+                                        >
+                                            <svg
+                                                class="w-6 h-6 text-white"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                viewBox="0 0 24 24"
+                                            >
+                                                <path
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    stroke-width="2"
+                                                    d="M7 17l9.2-9.2M17 17V7H7"
+                                                ></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="flex gap-2">
+                                    <button
+                                        type="button"
+                                        onclick="window.location.href='https://www.cytonic.com/svm'"
+                                        class="cursor-pointer p-4 pr-2 w-full border border-[#E8E8E8] rounded-[16px] group flex justify-between hover:bg-[#F5F5F5] transition-all duration-200"
+                                    >
+                                        <div
+                                            class="text-[18px] text-left font-medium leading-[130%]"
+                                        >
+                                            <p>SVM</p>
+                                            <span class="text-[#939393]"
+                                                >30, 000</span
+                                            >
+                                        </div>
+
+                                        <div class="flex items-end">
+                                            <div
+                                                class="w-10 h-10 bg-black rounded-lg flex items-center justify-center transition-all duration-200"
+                                            >
+                                                <svg
+                                                    class="w-6 h-6 text-white"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M7 17l9.2-9.2M17 17V7H7"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <button
+                                        type="button"
+                                        onclick="window.location.href='https://www.cytonic.com/evm'"
+                                        class="cursor-pointer p-4 pr-2 w-full border border-[#E8E8E8] rounded-[16px] group flex justify-between hover:bg-[#F5F5F5] transition-all duration-200"
+                                    >
+                                        <div
+                                            class="text-left text-[18px] font-medium leading-[130%]"
+                                        >
+                                            <p>EVM</p>
+                                            <span class="text-[#939393]"
+                                                >40, 000</span
+                                            >
+                                        </div>
+
+                                        <div class="flex items-end">
+                                            <div
+                                                class="w-10 h-10 bg-black rounded-lg flex items-center justify-center transition-all duration-200"
+                                            >
+                                                <svg
+                                                    class="w-6 h-6 text-white"
+                                                    fill="none"
+                                                    stroke="currentColor"
+                                                    viewBox="0 0 24 24"
+                                                >
+                                                    <path
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        stroke-width="2"
+                                                        d="M7 17l9.2-9.2M17 17V7H7"
+                                                    ></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -168,7 +388,12 @@ import TwoChecks from '@assets/icons/twoChecks.svg';
                         ><div
                             class="w-[65px] h-[1px] bg-[#646464] absolute -right-[66px]"
                         >
-                        </div></button
+                        </div>
+                        <p
+                            class="absolute text-white text-[18px] font-medium leading-[120%] top-4 -left-3"
+                        >
+                            Past
+                        </p></button
                     >
                     <button
                         class="w-4 h-4 bg-[#3C3C3C] rounded-full info-carousel-dot border-1 border-[#646464] relative"
@@ -177,11 +402,23 @@ import TwoChecks from '@assets/icons/twoChecks.svg';
                         <div
                             class="w-[65px] h-[1px] bg-[#646464] absolute -right-[66px]"
                         >
-                        </div></button
+                        </div>
+                        <p
+                            class="absolute text-white text-[18px] font-medium leading-[120%] top-4 -left-7"
+                        >
+                            Current
+                        </p></button
                     >
                     <button
-                        class="w-4 h-4 bg-[#3C3C3C] rounded-full info-carousel-dot border-1 border-[#646464]"
-                        data-slide="2"></button>
+                        class="w-4 h-4 bg-[#3C3C3C] rounded-full info-carousel-dot border-1 border-[#646464] relative"
+                        data-slide="2"
+                    >
+                        <p
+                            class="absolute text-white text-[18px] font-medium leading-[120%] top-4 -left-5"
+                        >
+                            Future
+                        </p></button
+                    >
                 </div>
             </div>
         </div>
