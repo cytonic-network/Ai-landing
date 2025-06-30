@@ -11,12 +11,24 @@ import Menu from "../../public/icons/menu.svg";
     />
 
     <div class="hidden lg:flex gap-[30px] text-white text-[14px]">
-        <a class="uppercase cursor-pointer">community</a>
+        <a
+            class="uppercase cursor-pointer"
+            href="https://discord.com/invite/cytonic">community</a
+        >
         <a class="uppercase cursor-pointer">ecosystem</a>
-        <a class="uppercase cursor-pointer">docs</a>
-        <a class="uppercase cursor-pointer">socials</a>
-        <a class="uppercase cursor-pointer">research</a>
-        <a class="uppercase cursor-pointer">news</a>
+        <a class="uppercase cursor-pointer" href="https://docs.cytonic.com/"
+            >docs</a
+        >
+        <a class="uppercase cursor-pointer" href="https://x.com/cytonic_com"
+            >socials</a
+        >
+        <a
+            class="uppercase cursor-pointer"
+            onclick="scrollToSection('research')">research</a
+        >
+        <a class="uppercase cursor-pointer" onclick="scrollToSection('news')"
+            >news</a
+        >
     </div>
 
     <div class="flex items-center gap-4 relative z-[60]">
@@ -39,7 +51,10 @@ import Menu from "../../public/icons/menu.svg";
             <div
                 class="absolute flex items-center justify-center z-40 inset-0 pointer-events-none top-10 md:top-50"
             >
-                <img src="/buble.png" class="opacity-20 scale-50 md:scale-60" />
+                <img
+                    src="/src/assets/bubble.png"
+                    class="opacity-20 scale-50 md:scale-60"
+                />
             </div>
 
             <div
@@ -52,8 +67,14 @@ import Menu from "../../public/icons/menu.svg";
                     <a class="uppercase cursor-pointer">ecosystem</a>
                     <a class="uppercase cursor-pointer">docs</a>
                     <a class="uppercase cursor-pointer">socials</a>
-                    <a class="uppercase cursor-pointer">research</a>
-                    <a class="uppercase cursor-pointer">news</a>
+                    <a
+                        class="uppercase cursor-pointer"
+                        onclick="scrollToSection('research')">research</a
+                    >
+                    <a
+                        class="uppercase cursor-pointer"
+                        onclick="scrollToSection('news')">news</a
+                    >
                 </div>
 
                 <div class="w-full px-4 pb-6">
@@ -76,6 +97,21 @@ import Menu from "../../public/icons/menu.svg";
 </header>
 
 <script is:inline>
+    function scrollToSection(id) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+
+        const mobileMenu = document.getElementById("mobileMenu");
+        if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+            document.getElementById("menuIcon").style.transform =
+                "rotate(0deg)";
+            document.body.style.overflow = "";
+        }
+    }
+
     document.addEventListener("DOMContentLoaded", function () {
         const menuToggle = document.getElementById("menuToggle");
         const mobileMenu = document.getElementById("mobileMenu");
@@ -84,19 +120,10 @@ import Menu from "../../public/icons/menu.svg";
 
         menuToggle.addEventListener("click", function () {
             const isOpen = mobileMenu.classList.toggle("hidden");
-
-            // Анимация иконки
-            if (isOpen) {
-                menuIcon.style.transform = "rotate(0deg)";
-            } else {
-                menuIcon.style.transform = "rotate(90deg)";
-            }
-
-            if (!isOpen) {
-                body.style.overflow = "hidden";
-            } else {
-                body.style.overflow = "";
-            }
+            menuIcon.style.transform = isOpen
+                ? "rotate(0deg)"
+                : "rotate(90deg)";
+            body.style.overflow = isOpen ? "" : "hidden";
         });
     });
 </script>

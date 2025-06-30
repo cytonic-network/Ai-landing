@@ -1,5 +1,5 @@
 ---
-const { class: className = '' } = Astro.props;
+const { class: className = "" } = Astro.props;
 ---
 
 <section
@@ -19,7 +19,7 @@ const { class: className = '' } = Astro.props;
         <span>/ CYTONIC MATRIX</span>
       </h2>
       <p
-        class="text-2xl text-[#939393] font-medium col-start-2 lg:row-start-2 row-start-3 ml-auto max-w-[637px]"
+        class="text-[18px] md:text-2xl text-[#939393] font-medium col-start-2 lg:row-start-2 row-start-3 ml-auto max-w-[637px]"
       >
         Our in-house incubation hub—an ideation taskforce that seeds and
         accelerates the dApps and AI-powered services our ecosystem needs most.
@@ -620,12 +620,6 @@ const { class: className = '' } = Astro.props;
       updateCarousel(currentSlide);
     });
   });
-
-  // Auto-advance carousel (optional)
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    updateCarousel(currentSlide);
-  }, 5000);
 
   // Touch/swipe support
   let startX = 0;
