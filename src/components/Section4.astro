@@ -1,11 +1,5 @@
----
-const { class: className = "" } = Astro.props;
----
-
 <section
-  class={"bg-white py-16 sm:px-6 lg:px-8 font-work -tracking-[0.02em] *:**:transition-all *:**:duration-300" +
-    " " +
-    className}
+  class="bg-white py-16 sm:px-6 lg:px-8 font-work -tracking-[0.02em] *:**:transition-all *:**:duration-300"
 >
   <div class="max-w-[1200px] px-[39.5px] mx-auto">
     <!-- Header -->
@@ -566,22 +560,22 @@ const { class: className = "" } = Astro.props;
       <!-- Carousel Indicators -->
       <div class="flex justify-center mt-6 space-x-2">
         <button
-          class="w-2 h-2 bg-black rounded-full carousel-dot active"
+          class="w-4 h-4 bg-black rounded-full carousel-dot active"
           data-slide="0"></button>
         <button
-          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          class="w-4 h-4 bg-gray-300 rounded-full carousel-dot"
           data-slide="1"></button>
         <button
-          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
-          data-slide="2"></button>
-        <button
-          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
-          data-slide="3"></button>
-        <button
-          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          class="w-4 h-4 bg-gray-300 rounded-full carousel-dot"
           data-slide="4"></button>
         <button
-          class="w-2 h-2 bg-gray-300 rounded-full carousel-dot"
+          class="w-4 h-4 bg-gray-300 rounded-full carousel-dot"
+          data-slide="3"></button>
+        <button
+          class="w-4 h-4 bg-gray-300 rounded-full carousel-dot"
+          data-slide="4"></button>
+        <button
+          class="w-4 h-4 bg-gray-300 rounded-full carousel-dot"
           data-slide="5"></button>
       </div>
     </div>
@@ -597,7 +591,9 @@ const { class: className = "" } = Astro.props;
 
   function updateCarousel(slideIndex) {
     const translateX = -slideIndex * 100;
-    container.style.transform = `translateX(${translateX}%)`;
+    if (container) {
+      container.style.transform = `translateX(${translateX}%)`;
+    }
 
     // Update dots
     dots.forEach((dot, index) => {
@@ -625,17 +621,17 @@ const { class: className = "" } = Astro.props;
   let startX = 0;
   let isDragging = false;
 
-  container.addEventListener("touchstart", (e) => {
+  container?.addEventListener("touchstart", (e) => {
     startX = e.touches[0].clientX;
     isDragging = true;
   });
 
-  container.addEventListener("touchmove", (e) => {
+  container?.addEventListener("touchmove", (e) => {
     if (!isDragging) return;
     e.preventDefault();
   });
 
-  container.addEventListener("touchend", (e) => {
+  container?.addEventListener("touchend", (e) => {
     if (!isDragging) return;
     isDragging = false;
 
