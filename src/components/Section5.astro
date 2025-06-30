@@ -1,4 +1,7 @@
-<section class="py-20 px-6 font-work *:**:transition-all duration-300">
+<section
+    class="py-20 px-6 font-work *:**:transition-all duration-300"
+    id="research"
+>
     <div class="max-w-7xl mx-auto">
         <!-- Section Header -->
         <div class="flex flex-col mb-12 items-end">
@@ -21,7 +24,7 @@
         <div class="md:hidden">
             <div class="relative overflow-hidden">
                 <div
-                    id="carousel-container"
+                    id="carousel-container-section-5"
                     class="flex transition-transform duration-300 ease-in-out"
                 >
                     <!-- Quantum Blockchains -->
@@ -266,7 +269,9 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const carousel = document.getElementById("carousel-container");
+        const carousel = document.getElementById(
+            "carousel-container-section-5",
+        );
         const indicators = document.querySelectorAll(".carousel-indicator");
         let currentSlide = 0;
         const totalSlides = 3;
@@ -275,7 +280,6 @@
             const translateX = -currentSlide * 100;
             carousel.style.transform = `translateX(${translateX}%)`;
 
-            // Update indicators
             indicators.forEach((indicator, index) => {
                 if (index === currentSlide) {
                     indicator.classList.remove("bg-[#E8E8E8]");
@@ -287,7 +291,6 @@
             });
         }
 
-        // Add click handlers to indicators
         indicators.forEach((indicator, index) => {
             indicator.addEventListener("click", () => {
                 currentSlide = index;
@@ -295,15 +298,14 @@
             });
         });
 
-        // Touch/swipe support
         let startX = 0;
         let endX = 0;
 
-        carousel.addEventListener("touchstart", (e) => {
+        carousel?.addEventListener("touchstart", (e) => {
             startX = e.touches[0].clientX;
         });
 
-        carousel.addEventListener("touchend", (e) => {
+        carousel?.addEventListener("touchend", (e) => {
             endX = e.changedTouches[0].clientX;
             handleSwipe();
         });

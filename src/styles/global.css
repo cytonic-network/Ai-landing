@@ -12,6 +12,10 @@
   --color-light-gray: #e8e8e8;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer theme {
   @font-face {
     font-family: "aurore";
