@@ -1,8 +1,11 @@
 ---
-import Arrow from '@assets/icons/arrow.svg';
-import Clock from '@assets/icons/clock.svg';
-import Image from '@assets/icons/image.svg';
-import Paperclip from '@assets/icons/paperclip.svg';
+import { Image } from "astro:assets";
+import Bubble from "@/assets/bubble.png";
+
+import Arrow from "@assets/icons/arrow.svg";
+import Clock from "@assets/icons/clock.svg";
+import ImageLogo from "@assets/icons/image.svg";
+import Paperclip from "@assets/icons/paperclip.svg";
 ---
 
 <div
@@ -21,7 +24,7 @@ import Paperclip from '@assets/icons/paperclip.svg';
             >
                 <span
                     class="text-[32px] md:text-[46px] leading-[110%] md:leading-[120%]"
-                    >CREATOR LAYER-1<br class="md:hidden" /> BLOCKCHAIN</span
+                    >CREATOR LAYER-1 <br class="md:hidden" /> BLOCKCHAIN</span
                 >
                 <span
                     class="text-[#939393] md:text-white text-[24px] md:text-[46px] leading-[110%] md:uppercase"
@@ -147,7 +150,7 @@ import Paperclip from '@assets/icons/paperclip.svg';
                                     </p>
                                 </span>
                                 <span class="flex gap-2 items-center">
-                                    <Image />
+                                    <ImageLogo />
                                     <p class="text-[14px] text-[#C0C0C0]">
                                         Use image
                                     </p>
